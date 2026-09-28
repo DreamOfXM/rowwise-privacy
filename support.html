@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rowwise — Support</title>
+<meta name="description" content="Help with Rowwise, the knitting and crochet row counter that keeps its log on your iPhone.">
+<style>
+  :root { --paper:#f7f6f3; --card:#fffefc; --ink:#14171a; --soft:#4a5158; --faint:#8b9096; --accent:#0f3a94; --line:#dfdcd6; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 17px/1.65 ui-serif, Georgia, "Times New Roman", serif;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 3.5rem 1.5rem 6rem; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 1.5rem; margin-bottom: 2.25rem; }
+  .eyebrow {
+    font: 700 11px/1 ui-sans-serif, system-ui, sans-serif; letter-spacing: .19em;
+    text-transform: uppercase; color: var(--accent); margin-bottom: .9rem;
+  }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .6rem; font-weight: 600; letter-spacing: -.015em; }
+  .stamp { font: 13px/1.5 ui-sans-serif, system-ui, sans-serif; color: var(--faint); }
+  h2 {
+    font: 600 1.1rem/1.4 ui-sans-serif, system-ui, sans-serif;
+    margin: 2.2rem 0 .5rem; letter-spacing: -.005em;
+  }
+  p { margin: 0 0 1rem; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 1.1rem 1.25rem; margin: 1.5rem 0;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  a { color: var(--accent); }
+  code { font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
+  .short { font: 14px/1.6 ui-sans-serif, system-ui, sans-serif; color: var(--soft); }
+  footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="eyebrow">Rowwise</div>
+  <h1>Support</h1>
+  <p class="stamp">Rowwise for iPhone · version 1.0 · answered by email, usually within a couple of days.</p>
+</header>
+
+<div class="card">
+  <p class="short"><strong>There is no account to reset.</strong> Rowwise has no server and no sign-in, so most support questions are really questions about how the app behaves. The ones below are answered here rather than behind a ticket on purpose.</p>
+</div>
+
+<h2>I bought Rowwise Pro and it is asking me again</h2>
+<p>The purchase is tied to your Apple Account, not to the app. Open <em>Settings</em> in Rowwise and tap <em>Restore purchase</em> — the row says "Same Apple Account, new phone, or after a reinstall" because that is the rule. If you bought it on a different Apple Account, restore will not find it; the receipt lives wherever the original one does.</p>
+
+<h2>What is free, and what is the one payment for?</h2>
+<p>Counting is free and stays free: unlimited projects, several counters per project, notes on any row, undo, haptics, targets. The one-time purchase of Rowwise Pro adds three things — a photograph on a row, the ZIP backup that carries those photographs, and the printable PDF project card. Nothing renews, and there is no subscription in this app.</p>
+
+<h2>Where does an export actually go?</h2>
+<p>Wherever you put it. Settings → <em>Export</em> (or <em>backup</em> / <em>card</em> beside one project) writes the file inside Rowwise and then opens the iOS share sheet, and you choose the destination — Files, Mail, a drive, nowhere. Rowwise keeps the five newest backup archives in its own storage so an export you lost track of can be re-shared, and prunes older ones. The app has no networking code, so it cannot send any of this anywhere by itself.</p>
+
+<h2>"Your saved rows could not be opened"</h2>
+<p>This appears when the file Rowwise writes to is there but no longer readable. The app deliberately does not open an empty library in that case, because your next tap would save over the only copy of your work. Instead it sets the bytes aside under a name that says what happened — <code>rowwise-unreadable-YYYYMMDD-HHMM.json</code> — and stops writing. Your route back is Settings → <em>Import a backup</em>, using a <code>.zip</code> Rowwise exported. If you need the set-aside file recovered rather than replaced, write to the address at the bottom and say which of the two messages you got; the file is still on your phone.</p>
+
+<h2>The backup will not import</h2>
+<p>Two different messages, two different causes. <em>"That archive has no rowwise.json in it"</em> means the file was not produced by Rowwise — pick the <code>.zip</code> from the Export row, not a file you re-zipped or renamed yourself. <em>"That backup was written by a newer Rowwise"</em> means exactly that: update the app first, then import.</p>
+
+<h2>I tapped undo — did it take my note with it?</h2>
+<p>No. Undo takes back one row on the counter and never touches a record. Notes and photographs belong to the row number, so if you undo to 45 and count back to 46, whatever you wrote on 46 is still there.</p>
+
+<h2>Can I photograph a row I counted earlier?</h2>
+<p>Yes. In <em>Row by row</em>, tap the row — that opens its record, where you can add or replace a photo and write or delete the note. The <em>Photo at 46</em> button on the counter is only the shortcut for the row you are on.</p>
+
+<h2>Why is the App Store page in my language but the app is in English?</h2>
+<p>Version 1.0's interface is English-only; the store page has been translated ahead of the app so you can tell what it does before you buy it. That is stated in every language's description too, so nobody finds out at first launch. Other languages are on the list, and which one comes first is decided by what people actually ask for — the address below.</p>
+
+<h2>Does it work on a plane, or in a basement?</h2>
+<p>It always does. Rowwise has no server to reach, so there is no connection that can fail. The only thing that needs a network is the purchase itself.</p>
+
+<h2>Refunds</h2>
+<p>Purchases go through Apple and are governed by Apple's refund process: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. We cannot issue a refund from our side, and we never see your card details.</p>
+
+<h2>Write to us</h2>
+<p><a href="mailto:hangzhou.gxm@gmail.com?subject=Rowwise%20support">hangzhou.gxm@gmail.com</a> — bug reports, a row pattern the ledger does not fit, and requests for a language are all read.</p>
+
+<footer>
+  <p class="short">Rowwise for iPhone · bundle id <code>com.dreamofxm.rowwise</code> · <a href="./privacy.html">privacy policy</a></p>
+</footer>
+</div>
+</body>
+</html>
